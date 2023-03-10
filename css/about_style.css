@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@900&display=swap');
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LINESeedKR-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LINESeedKR-Th';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+p{font-family: 'LINESeedKR-Rg';}
+
+#about{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/**********************menu************************/
+.menu{
+    padding: 40px;
+    width: 150px;
+    height: 100vh;
+    border-right: 1px solid #000;
+    background-color: #e5e5e5;
+}
+.menu h2{
+    font-family: 'LINESeedKR-Bd';
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    letter-spacing: -0.05em;
+}
+.menu p{
+    padding-bottom: 20px;
+    opacity: 0.5;
+}
+.menu p:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+.menu p:nth-child(3):hover{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+.menu p:nth-child(4):hover{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+.menu p:nth-child(5):hover{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+#about .menu{
+    padding: 40px;
+    width: 150px;
+    height: 100vh;
+    border-right: 1px solid #000;
+    background-color: #ffffff;
+}
+#about .menu p:nth-child(2){
+    font-size: 16px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+#about .menu p:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+#about .menu p:nth-child(2):hover{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+#about .menu p:nth-child(4):hover{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+#about .menu p:nth-child(5):hover{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+/**********************content************************/
+
+#about_content{
+    padding: 80px;
+    position: relative;
+    width: calc(100vw - 150px);
+    height: 100vh;
+}
+#about_img{
+    width: 750px;
+    height: 750px;
+    background-image: url(../images/about.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+#about_img h1{
+    font-family: 'Hahmlet', serif;
+    font-size: 70px;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    line-height: 1.2;
+}
+
+
+#name{
+    position: absolute;
+    bottom: 170px;
+    right: 250px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#name h2{
+    font-family: 'LINESeedKR-Bd';
+}
+#name h2:nth-child(1){
+    padding-bottom: 15px;
+}
+#skill p{
+    font-weight: 400;
+}
+.skill_base{
+    width: 500px;
+    height: 20px;
+    background-color: #b2b2b2;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 10px;
+}
+.skill_base p:nth-child(1){
+    position: absolute;
+    top: -23px;
+    left: 10px;
+}
+.skill_base p:nth-child(2){
+    position: absolute;
+    top: -25px;
+    right: 10px;
+}
+.skill_base div{
+    border-radius: 10px;
+}
+.skill_base:nth-child(1) div{
+    width: 450px;
+    height: 20px;
+    background-color: #66CAAB;
+}
+.skill_base:nth-child(2) div{
+    width: 450px;
+    height: 20px;
+    background-color: #66CAAB;
+}
+.skill_base:nth-child(3) div{
+    width: 450px;
+    height: 20px;
+    background-color: #66CAAB;
+}
+.skill_base:nth-child(4) div{
+    width: 300px;
+    height: 20px;
+    background-color: #66CAAB;
+}
+.skill_base:nth-child(5) div{
+    width: 350px;
+    height: 20px;
+    background-color: #66CAAB;
+}
