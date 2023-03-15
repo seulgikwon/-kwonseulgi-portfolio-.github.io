@@ -24,20 +24,19 @@
 a{text-decoration: none; color: inherit;}
 p{font-family: 'LINESeedKR-Rg'; font-weight: 400;}
 
-.works{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-}
-
 /**********************menu************************/
-.menu{
+.menu_wrap{
     padding: 40px;
     width: 150px;
     height: 100vh;
     border-right: 1px solid #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
 }
-.menu h2{
+.menu_wrap h2{
     font-size: 40px;
     font-weight: 700;
     padding-top: 20px;
@@ -45,69 +44,49 @@ p{font-family: 'LINESeedKR-Rg'; font-weight: 400;}
     font-family: 'LINESeedKR-Bd';
     letter-spacing: -0.05em;
 }
-.menu p{
+.menu_wrap p{
     padding-bottom: 20px;
     opacity: 0.5;
 }
-.menu p:nth-child(4){
+.menu_wrap p:nth-child(4){
     font-size: 20px;
     font-weight: 400;
     opacity: 1;
 }
-.menu p:nth-child(3):hover{
+.menu_wrap p:nth-child(3):hover{
     font-size: 20px;
     font-weight: 400;
     opacity: 1;
 }
-.menu p:nth-child(2):hover{
+.menu_wrap p:nth-child(2):hover{
     font-size: 20px;
     font-weight: 400;
     opacity: 1;
 }
-.menu p:nth-child(5):hover{
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 1;
-}
-#about .menu{
-    padding: 40px;
-    width: 150px;
-    height: 100vh;
-    border-right: 1px solid #000;
-    background-color: #ffffff;
-}
-#about .menu p:nth-child(2){
-    font-size: 16px;
-    font-weight: 100;
-    opacity: 0.7;
-}
-#about .menu p:nth-child(3){
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 1;
-}
-#about .menu p:nth-child(2):hover{
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 1;
-}
-#about .menu p:nth-child(4):hover{
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 1;
-}
-#about .menu p:nth-child(5):hover{
+.menu_wrap p:nth-child(5):hover{
     font-size: 20px;
     font-weight: 400;
     opacity: 1;
 }
 
-/**********************content************************/
-#content{
-    width: calc(100vw - 150px);
+section{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+}
+section~section{
+    top:100%;
+}
+.content{
+    padding-left: 150px;
+    width: 100vw;
     height: 100vh;
     display: flex;
 }
+/**********************content************************/
 .mockup{
     width: 60%;
     height: 100vh;
@@ -145,10 +124,8 @@ table{
     color: #fff;
 }
 /**********************poster************************/
-.works_content{
-    position: relative;
-}
 .poster .works_content{
+    position: relative;
     width: 50%;
     padding: 0;
 }
@@ -172,7 +149,7 @@ table{
     height: 100vh;
     position: relative;
 }
-#sns_content h1{
+#sns_content h4{
     font-size: 120px;
     transform: rotate(90deg);
     position: absolute;
@@ -181,7 +158,7 @@ table{
     font-family: 'sansita', sans-serif;
     font-style: italic;
 }
-#sns_content h2{
+#sns_content h5{
     font-size: 120px;
     transform: rotate(90deg);
     position: absolute;
@@ -241,18 +218,22 @@ table{
 }
 
 /**********************banner************************/
+.banner .works_content{
+    position: relative;
+}
 .banner .works_content h4{
     transform: rotate(0);
     position: absolute;
     top: 150px;
     left: 30px;
 }
-.banner .works_content{
-    position: relative;
-}
 #banner_btn{
     width: 210px;
     height: 210px;
+    position: absolute;
+    top: 400px;
+    left: 260px;
+
 }
 #banner_btn div{
     float: left;
