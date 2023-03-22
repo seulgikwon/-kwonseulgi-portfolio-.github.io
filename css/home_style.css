@@ -21,6 +21,7 @@
 
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
+html{font-size: 16px;}
 a{text-decoration: none; color: inherit;}
 p{font-family: 'LINESeedKR-Rg';}
 
@@ -76,86 +77,87 @@ p{font-family: 'LINESeedKR-Rg';}
     width: calc(100vw - 150px);
     height: 100vh;
     background-color: #e5e5e5;
-    padding: 60px;
-    position: relative;
+    padding-top: 60px;
 }
-#cover video{
-    width: 1200px;
-    height: 763px;
-    position: absolute;
-    top: 130px;
-    left: 285px;
+#cover_wrap{
+    width: 1630px;
+    height: 850px;
+    margin: 0 auto;
+    background-image: url(../images/cover_bg.gif);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-#cover div p{
-    font-size: 18px;
+#cover p{
+    font-size: 1.1rem;
     font-weight: 300;
 }
-#cover div:nth-child(2){
-    width: 1630px;
+#cover_wrap > div:nth-child(1){
+    width: 100%;
     height: 82px;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
     margin-bottom: 210px;
 }
-#cover div:nth-child(3){
+#cover div:nth-child(2){
     width: 1630px;
     height: 420px;
     border-right: 1px solid #000;
     margin-bottom: 50px;
 }
-#cover div:nth-child(4){
+#cover div:nth-child(3){
     width: 1630px;
     height: 82px;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
     position: relative;
 }
-#cover div:nth-child(4) p{
+#cover div:nth-child(3) p{
     position: absolute;
     bottom: 0;
     right: 0;
 }
+#title_wrap{
+    display: flex;
+    width: 850px;
+    height: 100px;
+    margin: 0 auto;
+}
+#title_wrap h1{
+    margin-right: 38px;
+}
+#title_wrap h1:nth-child(1){
+    margin-top: -270px;
+}
+#title_wrap h1:nth-child(2){
+    margin-top: -235px;
+}
+#title_wrap h1:nth-child(3){
+    margin-top: -265px;
+}
+#title_wrap h1:nth-child(4){
+    margin-right: 100px;
+    margin-top: -280px;
+}
+#title_wrap h1:nth-child(5){
+    margin-top: -240px;
+}
+#title_wrap h1:nth-child(6){
+    margin-top: -280px;
+}
+#title_wrap h1:nth-child(7){
+    margin-top: -250px;
+}
+#title_wrap h1:nth-child(8){
+    margin-top: -210px;
+}
+#title_wrap h1:nth-child(9){
+    margin-right: 0;
+    margin-top: -260px;
+}
 #cover h1{
-    position: absolute;
-    font-size: 100px;
+    font-size: 6.5rem;
     font-family: 'Sansita', sans-serif;
-    color: ;
-}
-#cover h1:nth-child(5){
-    top: 90px;
-    left: 470px;
-}
-#cover h1:nth-child(6){
-    top: 120px;
-    left: 550px;
-}
-#cover h1:nth-child(7){
-    top: 100px;
-    left: 630px;
-}
-#cover h1:nth-child(8){
-    top: 85px;
-    left: 720px;
-}
-#cover h1:nth-child(9){
-    top: 120px;
-    left: 870px;
-}
-#cover h1:nth-child(10){
-    top: 80px;
-    left: 950px;
-}
-#cover h1:nth-child(11){
-    top: 100px;
-    left: 1050px;
-}
-#cover h1:nth-child(12){
-    top: 115px;
-    left: 1140px;
-}
-#cover h1:nth-child(13){
-    top: 90px;
-    left: 1220px;
 }
 
 

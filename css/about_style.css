@@ -107,7 +107,7 @@ p{font-family: 'LINESeedKR-Rg';}
 
 #about_content{
     padding: 80px;
-    position: relative;
+    display: flex;
     width: calc(100vw - 150px);
     height: 100vh;
 }
@@ -120,22 +120,16 @@ p{font-family: 'LINESeedKR-Rg';}
 }
 #about_img h1{
     font-family: 'Hahmlet', serif;
-    font-size: 70px;
+    font-size: 4.7rem;
     position: absolute;
     top: 100px;
     left: 400px;
     line-height: 1.2;
 }
-
-
 #name{
-    position: absolute;
-    bottom: 170px;
-    right: 250px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-#name h2{
-    font-family: 'LINESeedKR-Bd';
+    font-family: 'LINESeedKR-Rg';
+    padding-top: 350px;
+    padding-left: 200px;
 }
 #name h2:nth-child(1){
     padding-bottom: 15px;
@@ -168,6 +162,7 @@ p{font-family: 'LINESeedKR-Rg';}
     width: 450px;
     height: 20px;
     background-color: #66CAAB;
+
 }
 .skill_base:nth-child(2) div{
     width: 450px;

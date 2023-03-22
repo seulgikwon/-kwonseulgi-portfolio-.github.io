@@ -90,7 +90,6 @@ section~section{
 .mockup{
     width: 60%;
     height: 100vh;
-    background-color: #e5e5e5;
 }
 .works_content{
     width: 40%;
@@ -123,7 +122,117 @@ table{
     background-color: #000;
     color: #fff;
 }
+/**********************shilla************************/
+.shilla_mockup{
+    width: 100%;
+    height: 100%;
+}
+/* .shilla_mockup #shilla1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/shilla3.png);
+    background-size: cover;
+    background-position: center center;
+}
+.shilla_mockup #shilla2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/shilla1.png);
+    background-size: cover;
+    background-position: center center;
+} */
+.shilla_mockup #shilla3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/shilla2.png);
+    background-size: cover;
+    background-position: center center;
+}
+/**********************landing************************/
+.landing_mockup{
+    width: 100%;
+    height: 100%;
+}
+.landing_mockup #landing3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/landing.png);
+    background-size: cover;
+    background-position: center center;
+}
+/**********************artemide************************/
+.artemide_mockup{
+    width: 100%;
+    height: 100%;
+}
+.artemide_mockup #artemide3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/artemide.png);
+    background-size: cover;
+    background-position: center center;
+}
+/**********************branding************************/
+#branding .content{
+    background-image: url(../images/branding_bg.png);
+    background-repeat: no-repeat;
+    background-position: 150px center;
+    background-size: 93%;
+
+}
+.branding_mockup{
+    width: 100%;
+    height: 100%;
+}
+.branding_mockup #branding3{
+    width: 100%;
+    height: 100%;
+}
 /**********************poster************************/
+#poster_wrap{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 300px;
+    display: flex;
+}
+#poster_wrap div{
+    width: 230px;
+    height: 300px;
+    margin-right: 70px;
+}
+#poster_wrap div:nth-child(1){
+    background-image: url(../images/poster1.png);
+    background-position: center center;
+    cursor: pointer;
+}
+#poster_wrap div:nth-child(2){
+    background-image: url(../images/poster2.png);
+    margin-right: 0;
+    background-position: center center;
+    cursor: pointer;
+}
+.poster_img{
+    width: 600px;
+    height: 850px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+}
+.poster_img div{
+    width: 100%;
+    height: 100%;
+    
+}
+.poster_img #poster1{
+    opacity: 0;
+    background-image: url(../images/poster1_1.png);
+}
+.poster_img #poster2{
+    margin-left: -600px;
+    opacity: 0;
+    background-image: url(../images/poster2_1.png);
+}
 .poster .works_content{
     position: relative;
     width: 50%;
@@ -138,8 +247,8 @@ table{
     font-size: 120px;
     transform: rotate(-90deg);
     position: absolute;
-    top: 400px;
-    left: -120px;
+    top: 420px;
+    left: -60px;
 }
 
 
@@ -177,42 +286,65 @@ table{
     margin-right: 20px;
 }
 .sns_slide #sns1{
-    background-color: aqua;
+    background-image: url(../images/sns8.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns2{
-    background-color: rgb(10, 51, 51);
+    background-image: url(../images/sns9.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns3{
-    background-color: rgb(109, 218, 99);
+    background-image: url(../images/sns10.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns4{
-    background-color: rgb(109, 218, 99);
+    background-image: url(../images/sns1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns5{
-    background-color: rgb(109, 218, 99);
+    background-image: url(../images/sns2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns6{
-    background-color: rgb(109, 218, 99);
+    background-image: url(../images/sns4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns7{
-    background-color: rgb(109, 218, 99);
+    background-image: url(../images/sns5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
 .sns_slide #sns8{
-    background-color: rgb(109, 218, 99);
+    background-image: url(../images/sns6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+.sns_slide #sns9{
+    background-image: url(../images/sns7.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
@@ -220,6 +352,10 @@ table{
 /**********************banner************************/
 .banner .works_content{
     position: relative;
+    width: 30%;
+}
+.banner .mockup{
+    width: 70%;
 }
 .banner .works_content h4{
     transform: rotate(0);
@@ -239,7 +375,85 @@ table{
     float: left;
     width: 50px;
     height: 50px;
-    background-color: aquamarine;
+    background-color: rgb(206, 206, 206);
     margin-right: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+#banner_btn div:hover{
+    background-color: #66CAAB;
+}
+.banner .mockup{
+    position: relative;
+}
+.banner_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner_img div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+.banner_img #banner1{
+    background-image: url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+}
+.banner_img #banner2{
+    background-image: url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+}
+.banner_img #banner3{
+    background-image: url(../images/banner3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+}
+.banner_img #banner4{
+    background-image: url(../images/banner4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+}
+.banner_img #banner5{
+    background-image: url(../images/banner5.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    background-size: 90%;
+}
+.banner_img #banner6{
+    background-image: url(../images/banner6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+}
+.banner_img #banner7{
+    background-image: url(../images/banner7.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    background-size: 90%;
+}
+.banner_img #banner8{
+    background-image: url(../images/banner8.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    
 }
