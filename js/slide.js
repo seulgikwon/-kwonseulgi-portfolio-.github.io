@@ -8,6 +8,88 @@ $(document).ready(function(){
         dots: true,
         arrows: false,
       });
+
+      $('#poster_btn1').click(function(){
+        $('#poster1').css({
+            opacity:1
+        });
+      });
+      $('#poster_btn2').click(function(){
+        $('#poster2').css({
+            opacity:1
+        });
+      });
+
+
+
+    //   banner jquery 
+
+
+      $('#banner_btn > div:nth-child(1)').click(function(){
+        $('#banner1').css({
+            opacity:1
+        });
+        $('#banner8').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(2)').click(function(){
+        $('#banner2').css({
+            opacity:1
+        });
+        $('#banner1').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(3)').click(function(){
+        $('#banner3').css({
+            opacity:1
+        });
+        $('#banner2').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(4)').click(function(){
+        $('#banner4').css({
+            opacity:1
+        });
+        $('#banner3').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(5)').click(function(){
+        $('#banner5').css({
+            opacity:1
+        });
+        $('#banner4').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(6)').click(function(){
+        $('#banner6').css({
+            opacity:1
+        });
+        $('#banner5').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(7)').click(function(){
+        $('#banner7').css({
+            opacity:1
+        });
+        $('#banner6').css({
+            opacity:0
+        });
+      });
+      $('#banner_btn > div:nth-child(8)').click(function(){
+        $('#banner8').css({
+            opacity:1
+        });
+        $('#banner7').css({
+            opacity:0
+        });
+      });
+
 });
 
 $(function(){
@@ -53,3 +135,6 @@ $(function(){
       } // if(now_stop)
   });
 });
+
+
+
