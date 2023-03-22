@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+body{
+    font-family: 'Abel', sans-serif;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+#wrap{
+    width: 100%;
+}
+.inner{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/***********************header**************************/
+header{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    
+    margin: 0 auto;
+}
+header .inner{
+    width: 1440px;
+    margin: 0 auto;
+}
+header h1{
+    float: left;
+    margin-right: 50px;
+}
+header nav ul li:first-child{
+    margin-left: 150px;
+}
+header nav ul li{
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+header nav ul li a{
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    color: #e3251b;
+}
+header #util{
+    float: right;
+    padding-top: 12px;
+}
+header #util li{
+    float: left;
+}
+header #util li:first-child{
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    width: 160px;
+    height: 40px;
+    position: relative;
+    left: 15px;
+}
+header #util li:nth-child(2){
+    position: relative;
+    left: -23px;
+    top: 7px;
+}
+/***********************sec01**************************/
+#sec01{
+    background-image: url(../img/main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1240px;
+    height: 700px;
+    clear: both;
+}
+#sec01 .inner{
+    padding: 0 30px;
+}
+#sec01 h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.7rem;
+    font-weight: lighter;
+    position: relative;
+    top: 330px;
+}
+#sec01 h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    position: relative;
+    top: 330px;
+}
+#sec01 p{
+    background-color: #fff;
+    width: 250px;
+    height: 45px;
+    border-radius: 30px;
+    position: relative;
+    top: 363px;
+    font-size: 1.2rem;
+    padding: 7px 0 0 25px;
+}
+#sec01 #more{
+    position: relative;
+    top: 330px;
+    left: 207px;
+}
+#sec01 ul li{
+    float: left;
+    margin-right: 20px;
+}
+#sec01 ul{
+    position: relative;
+    top: 365px;
+    left: 1050px;
+}
+/***********************sec02**************************/
+#sec02{
+    clear: both;
+}
+#sec02 a{
+    display: block;
+}
+#sec02 ul{
+    background-color: #fff;
+    width: 1240px;
+    height: 200px;
+    padding-top: 17px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-top: -100px;
+    position: relative;
+}
+#sec02 ul li{
+    float: left;
+    width: 142px;
+    margin-right: 100px;
+}
+#sec02 ul li:last-child{
+    margin-right: 0;
+}
+#sec02 ul li:first-child{
+    margin-left: 60px;
+}
+#sec02 ul li h4{
+    text-align: center;
+}
+
+#sec02 #sec02_left{
+    position: relative;
+    display: block;
+    
+}
+#sec02 #sec02_right{
+    position: relative;
+    
+}
+/***********************sec03**************************/
+
+h5{
+    font-size: 2.2rem;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+#sec03 ul li{
+    width: 265px;
+    height: 400px;
+    float: left;
+    margin-right: 60px;
+}
+#sec03 ul li:last-child{
+    margin-right: 0;
+}
+#sec03 ul li h2{
+    font-size: 1rem;
+    padding-left: 12px;
+    padding-bottom: 47px;
+}
+#sec03 ul li h3{
+    font-size: 0.9rem;
+    color: #179A3C;
+    padding-left: 12px;
+    font-weight: lighter;
+}
+#sec03 ul li h3 span{
+    color: #e3251b;
+}
+#sec03 ul li h4{
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-left: 12px;
+}
+#sec03 ul li p{
+    font-size: 1.3rem;
+    float: right;
+    position: relative;
+    top: -25px;
+    right: 12px;
+}
+#sec03 .item{
+    background-color: #f3f3f3;
+    display: block;
+    width: 265px;
+    height: 400px;
+}
+#sec03 .item:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+#sec03 ul{
+    height: 400px;
+    margin-bottom: 150px;
+}
+#sec03 #item_left{
+    position: relative;
+    top: -450px;
+    left: -20px;
+}
+#sec03 #item_right{
+    position: relative;
+    top: -450px;
+    left: 1075px;
+}
+/***********************sec04**************************/
+#sec04{
+    clear: both;
+    background-image: url(../img/news.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1240px;
+    height: 450px;
+}
+#sec04 h2{
+    width: 168px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 36px;
+    padding-top: 156px;
+}
+#sec04 h3{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+#sec04 h3 span{
+    color: #e3251b;
+    font-size: 2.1rem;
+    font-family: 'Abril Fatface', cursive;
+}
+#sec04 #email{
+    width: 295px;
+    height: 36px;
+    background-color: #fff;
+    margin-top: 15px;
+    float: left;
+}
+#sec04 #email p{
+    float: left;
+    padding: 7px 0 0 15px;
+}
+#sec04 #email img{
+    float: right;
+    margin: 7px 15px 0 0;
+}
+#sec04 #sub{
+    float: left;
+    background-color: #fff;
+    width: 155px;
+    height: 36px;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    padding-top: 7px;
+}
+#sec04 #sub:hover{
+    background-color: rgba(241, 241, 241, 0.6);
+}
+/***********************sec05**************************/
+
+#sec05 a{
+    display: block;
+}
+#sec05 ul li{
+    width: 405px;
+    height: 400px;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 150px;
+}
+#sec05 ul li:last-child{
+    margin-right: 0;
+}
+#sec05 ul li p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+/***********************sec06**************************/
+#sec06{
+    clear: both;
+    height: 100px;
+}
+#sec06 ul li{
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+#sec06 #bn_left{
+    background-image: url(../img/banner1.png);
+}
+#sec06 #bn_right{
+    background-image: url(../img/banner2.png);
+}
+#sec06 a{
+    color: #fff;
+    display: block;
+    height: 100px;
+    width: 100%;
+    padding: 0 35px;
+    line-height: 100px;
+}
+#sec06 a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#sec06 h3{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    float: left;
+}
+#sec06 p{
+    float: right;
+    border-bottom: 1px solid #fff;
+    width: 40px;
+    height: 23px;
+    padding-bottom: 63px;
+}
+/***********************footer**************************/
+footer{
+    clear: both;
+    margin-top: 150px;
+    background-color: #d9d9d9;
+    height: 400px;
+    padding: 60px 0;
+}
+footer #social{
+    width: 223px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+footer #social #kakao{
+    padding-bottom: 4px;
+}
+footer #social .ft_ic{
+    margin-right: 21px;
+}
+
+footer ul li{
+    float: left;
+    margin-right: 46px;
+}
+footer ul li:last-child{
+    margin-right: 0;
+}
+footer ul li:nth-child(2){
+    color: #e3251b;
+}
+footer ul li a{
+    font-size: 0.9rem;
+}
+footer ul{
+    width: 800px;
+    height: 24px;
+    margin: 0 auto;
+}
+footer p{
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+footer select{
+    width: 169px;
+    height: 24px;
+    appearance: none;
+    border: #fff;
+    padding: 0 15px;
+    background-image: url(../img/ft_arrow.png);
+    background-repeat: no-repeat;
+    background-position: 138px;
+}
+
+
+/************************************************/
+#quick{
+    border-radius: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/q_menu.png);
+    color: #fff;
+    text-align: center;
+    padding-top: 95px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
