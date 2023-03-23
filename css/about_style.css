@@ -137,7 +137,7 @@ p{font-family: 'LINESeedKR-Rg';}
 #skill p{
     font-weight: 400;
 }
-.skill_base{
+.skill_wrap{
     width: 500px;
     height: 20px;
     background-color: #b2b2b2;
@@ -145,42 +145,82 @@ p{font-family: 'LINESeedKR-Rg';}
     position: relative;
     border-radius: 10px;
 }
-.skill_base p:nth-child(1){
+.skill_wrap p:nth-child(1){
     position: absolute;
-    top: -23px;
-    left: 10px;
+    top: -20px;
+    left: 0;
 }
-.skill_base p:nth-child(2){
+.skill_wrap p:nth-child(2){
     position: absolute;
-    top: -25px;
-    right: 10px;
+    top: -20px;
+    right: 0;
 }
 .skill_base div{
     border-radius: 10px;
 }
-.skill_base:nth-child(1) div{
+.skill_base{
+    overflow: hidden;
+}
+#skill div:nth-child(1) .skill_move{
     width: 450px;
     height: 20px;
     background-color: #66CAAB;
-
+    margin-left: -450px;
+    animation-name: move1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards
 }
-.skill_base:nth-child(2) div{
+#skill div:nth-child(2) .skill_move{
     width: 450px;
     height: 20px;
     background-color: #66CAAB;
+    margin-left: -450px;
+    animation-name: move1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards
 }
-.skill_base:nth-child(3) div{
+#skill div:nth-child(3) .skill_move{
     width: 450px;
     height: 20px;
     background-color: #66CAAB;
+    margin-left: -450px;
+    animation-name: move1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards
 }
-.skill_base:nth-child(4) div{
+#skill div:nth-child(4) .skill_move{
     width: 300px;
     height: 20px;
     background-color: #66CAAB;
+    margin-left: -300px;
+    animation-name: move2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards
 }
-.skill_base:nth-child(5) div{
+#skill div:nth-child(5) .skill_move{
     width: 350px;
     height: 20px;
     background-color: #66CAAB;
+    margin-left: -350px;
+    animation-name: move3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards
+}
+
+@keyframes move1{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(450px);}
+}
+@keyframes move2{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(300px);}
+}
+@keyframes move3{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(350px);}
 }
