@@ -20,7 +20,17 @@ $(document).ready(function(){
         });
       });
 
+      
 
+    //()클릭하면 실행되라. -> ()보여라
+    $('.btn a').click(function () {
+        $('.bg').show();
+    });
+
+    //(닫기) 클릭하면 행동해라 -> ()숨겨라
+    $('.close').click(function () {
+        $('.bg').hide();
+    });
 
     //   banner jquery 
 
