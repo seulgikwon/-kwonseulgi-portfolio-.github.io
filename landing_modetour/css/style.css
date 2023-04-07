@@ -6,10 +6,10 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'IBMPlexSansKR-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+   font-family: 'IBMPlexSansKR-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
 }
 @font-face {
    font-family: 'InkLipquid';
@@ -23,9 +23,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html.body{
     font-size: 16px;
-    font-family: 'IBMPlexSansKR-Regular';
+}
+h1,h2,h3,h4,h5,h6,p{
+   font-family: 'IBMPlexSansKR-Regular';
 }
 .inner{
     width: 1080px;
@@ -58,7 +60,7 @@ header{
     height: 765px;
     background-image: url(../images/main_bg.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
 }
 #main h3{
     font-family: 'Abril Fatface', cursive;
@@ -116,6 +118,8 @@ header{
     height: 100px;
     background-color: #FF9F78;
     margin-top: -6px;
+    position: relative;
+    z-index: 99;
 }
  #nav nav ul{
     display: flex;
@@ -180,6 +184,7 @@ header{
 }
 #okinawa h4{
    font-size: 1.3rem;
+   font-family: 'IBMPlexSansKR-Regular';
 }
 #okinawa h5{
    color: #707070;
@@ -190,6 +195,7 @@ header{
 #okinawa p{
    font-size: 1.1rem;
    padding: 20px 0;
+   font-family: 'IBMPlexSansKR-Regular';
 }
 
 /*hotel*/
@@ -288,10 +294,6 @@ header{
    padding: 30px 0;
    width: 530px;
    height: 670px;
-   border-radius: 40px;
-}
-
-#package #pk_cont > div{
    background-color: #fff;
    border-radius: 40px;
    margin: 50px 0;
@@ -528,46 +530,38 @@ header{
 }
 
 /*****rcmd**********/
+
 #rcmd .inner{
    position: relative;
-   padding-bottom: 250px;
+   height: 1000px;
 }
 #rcmd h1{
    color: #000;
+   padding-bottom: 80px;
 }
-#rcmd ul{
-   display: flex;
-   width: 803px;
-   margin: 80px auto;
+#rcmd .rcmd_slide{
+   width: 830px;
+   height: 332px;
+   margin: 0 auto;
 
 }
-#rcmd ul li{
-   width: 255px;
-   height: 332px;
-   box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
-   margin-right: 25px;
+.rcmd_slide div{
+   
+}
+.rcmd_slide div a{
+   display: block;
    text-align: center;
+   margin-right: 20px;
+   width: 257px;
+   height: 332px;
+   background-color: #f0f0f0;
 }
-#rcmd ul li:last-child{
-   margin-right: 0;
+.rcmd_slide div a h3{
+   margin-top: 10px;
 }
-#rcmd h3{
-   font-size: 1.5rem;
-}
-#rcmd h4{
+.rcmd_slide div a h4{
    color: #707070;
    font-weight: 100;
-   margin-top: -7px;
-}
-#rcmd .rcmd_left{
-   position: absolute;
-   top: 350px;
-   left: 0;
-}
-#rcmd .rcmd_right{
-   position: absolute;
-   top: 350px;
-   right: 0;
 }
 
 
@@ -577,6 +571,7 @@ header{
    bottom: 80px;
    left: calc(100% / 2);
    transform: translateX(-50%);
+   z-index: 999;
 }
 #pop a{display: block;}
 #pop h3{
@@ -600,4 +595,269 @@ header{
    position: absolute;
    top: -10px;
    right: -100px;
+}
+
+
+
+@media (max-width:750px) {
+   .inner{
+      width: 700px;
+      margin: 0 auto;
+   }
+  #main h3{
+   padding-top: 68px;
+   font-size: 4rem;
+   }
+   #main h3:nth-child(4){
+      padding-top: 77px;
+   }
+   #main h2{
+      padding-top: 69px;
+   }
+   header{
+      height: 765px;
+   }
+   #nav{
+      width: 100%;
+      height: 100px;
+      background-color: #FF9F78;
+      margin-top: -16px;
+      position: relative;
+      z-index: 99;
+   }
+   #nav nav ul{
+      display: flex;
+      width: 100%;
+   }
+   #nav nav ul li{
+      width: 20%;
+      
+   }
+   #nav nav ul li a{
+      width: 100%;
+      display: block;
+      padding: 28px 0;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.4rem;
+   }
+   #nav nav ul li a:hover{
+   color: #FBD51E;
+   }
+
+   /* okinawa */
+
+   #okinawa{
+      height: 2450px;
+      background-size: cover;
+      background-position: center -20px;
+   }
+   #okinawa ul{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+   }
+   #okinawa ul li{
+      width: 48%;
+      margin-right: 4%;
+      margin-bottom: 20px;
+   }
+   #okinawa ul li:nth-child(2n){
+      margin-right: 0;
+   }
+   #okinawa ul li img{
+      padding: 15px;
+      width: 325px;
+   }
+   #okinawa h4{
+      font-size: 1.3rem;
+   }
+   #okinawa h5{
+      color: #707070;
+      font-weight: 100;
+      font-size: 1rem;
+      margin-top: -8px;
+   }
+   #okinawa p{
+      font-size: 1.1rem;
+      padding: 20px 0;
+   }
+
+   /*hotel*/
+
+#hotel{
+   height: 1150px;
+   margin-top: -40px;
+}
+#hotel #line{
+   top: 335px;
+}
+#hotel #right_img{
+   position: absolute;
+   top: 500px;
+   right: 0;
+   width: 500px;
+}
+#hotel #hotels{
+   display: block;
+}
+#hotel #hotels{
+   top: 630px;
+   left:10px;
+}
+#hotel #hotels img{
+   display: block;
+   width: 180px;
+}
+.more{
+   top: 475px;
+   left: 580px;
+}
+
+/*package*/
+#package{
+   background-position: center center;
+   background-size: cover;
+   height: 1900px;
+}
+#package > .inner > img{
+   left: 500px;
+}
+#package #pk_cont{
+   display: block;
+}
+#package a{
+   width: 530px;
+   height: 670px;
+   border-radius: 40px;
+   background-color: #fff;
+   margin: 100px 0;
+   margin-left: 85px;
+}
+
+
+
+/*event*/
+
+#event .heart{
+   left: 410px;
+}
+#event li{
+   width: 100%;
+   height: 200px;
+   position: relative;
+   padding: 0 15px;
+}
+#event li img{
+   position: absolute;
+   width: 225px;
+   left:  -14px;
+   top: -5px;
+}
+#event li h2{
+   font-size: 2rem;
+   text-align: right;
+}
+#event li h3{
+   font-size: 1.5rem;
+   padding-left: 220px;
+   padding-top: 15px;
+   font-weight: 500;
+}
+#event li p{
+   font-size: 1.2rem;
+   padding-left: 220px;
+   padding-top: 5px;
+   line-height: 1.2;
+}
+#event li:nth-child(2) img{
+   position: absolute;
+   left: 488px;
+}
+#event span{
+   font-weight: bold;
+}
+#event li:nth-child(3) p{
+   font-size: 1rem;
+}
+#event li:nth-child(3) h3{
+   padding-top: 0;
+}
+/*********mode**********/
+
+
+#mode ul{
+   margin-top: 50px;
+}
+#mode .heart{
+   position: absolute;
+   top: 75px;
+   left: 80px;
+}
+#mode ul li{
+   width: 100%;
+   height: 80px;
+   margin: 0 auto;
+   background-color: #fff;
+   margin-top: 40px;
+   position: relative;
+   box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+#mode ul li h3{
+   font-size: 1.5rem;
+   font-weight: 500;
+   padding: 23px 0 0 180px;
+}
+#mode ul li img{
+   top: 20px;
+}
+
+
+
+
+#banner{
+   height: 150px;
+}
+
+#banner .inner{
+   position: relative;
+}
+#banner .emoji{
+   padding-top: 16px;
+}
+#banner h3{
+   margin-top: -100px;
+   text-align: center;
+   font-size: 1.6rem;
+   font-weight: 500;
+}
+#banner .talk{
+   right: 40px;
+}
+#banner .inner > div{
+   position: absolute;
+   right: 0;
+   top: 110px;
+}
+
+/*****rcmd**********/
+#rcmd .inner{
+   height: 900px;
+}
+#rcmd .rcmd_slide{
+   width: 700px;
+   height: 332px;
+   margin: 0 auto;
+
+}
+.rcmd_slide div a{
+   width: 220px;
+   height: 300px;
+   background-color: #f0f0f0;
+}
+.rcmd_slide div a img{
+   width: 220px;
+}
+
 }
