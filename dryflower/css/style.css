@@ -1,0 +1,214 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#wrap{
+    width: 1200px;
+}
+ul, ol, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+header{
+    background-image: url(../images/flower_01.jpg);
+    height: 810px;
+    position: relative;
+}
+header h1{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+header nav ul{
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+header nav ul li{
+    padding-bottom: 20px;
+    text-align: right;
+}
+header nav a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+header div{
+    border: 5px solid #f3f5dd;
+    width: 1130px;
+    height: 380px;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+
+}
+header h2{
+    color: #cbd5ca;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: 735px;
+    margin-top: 50px;
+}
+header h3{
+    color: #f3f5dd;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-left: 735px;
+    margin-top: 20px;
+}
+header p{
+    color: #cbd5ca;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 735px;
+    margin-top: 20px;
+    padding-right: 40px;
+    line-height: 1.5;
+}
+
+
+
+#sec01 ul{
+    margin: 0 auto;
+    width: 500px;
+    height: 170px;
+}
+#sec01 ul li{
+    float: left;
+    padding: 15px 0;
+    margin: 55px 30px;
+}
+
+#sec01 ul li a{
+    color: #555;
+    padding: 15px 0;
+    font-size: 1.3rem;
+}
+#sec01 ul li a:hover{
+    border-bottom: 5px solid #b5bb95;
+}
+#sec01 #slide{
+    height: 675px;
+    background-image: url(../images/Pretty_flowers_vase_pink_background_2560x1440.jpg);
+    background-position: center;
+    clear: both;
+    position: relative;
+    margin-bottom: 50px;
+}
+#sec01 #left{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+#sec01 #right{
+    position: absolute;
+    top: 300px;
+    right: 30px;
+}
+
+#sec01 #dot{
+    width: 165px;
+    margin: 0 auto;
+}
+#sec01 #dot img{
+    padding: 0 5px;
+}
+
+
+#sec02{
+    background-color: #f0ede8;
+    height: 710px;
+    margin-top: 50px;
+    position: relative;
+    padding: 50px 30px;
+}
+#sec02 a{
+    display: block;
+}
+#sec02 #top{
+    width: 1140px;
+    height: 300px;
+    background-color: #aabaa0;
+}
+#sec02 h4{
+    color: #fff;
+    font-size: 3rem;
+    border: 5px solid #fff;
+    text-align: center;
+    width: 615px;
+    font-weight: 400;
+    padding: 30px 0;
+    position: absolute;
+    top: 150px;
+    left: 290px;
+}
+#sec02 #bt_left{
+    width: 565px;
+    height: 300px;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+#sec02 #top_right{
+    width: 565px;
+    height: 145px;
+    float: right;
+    margin: 10px 0;
+}
+#sec02 #bottom{
+    width: 565px;
+    height: 145px;
+    float: right;
+    background-image: url(../images/flower_13.jpg);
+}
+#sec02 #bottom p{
+    color: #fff;
+    font-size: 2rem;
+    border-bottom: 5px solid #fff;
+    width: 215px;
+    padding: 50px 0 10px 0;
+}
+
+
+#sec03 h5{
+    color: #aabaa0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 15px;
+}
+#sec03 p{
+    color: #aabaa0;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+#sec03 div{
+    margin-left: 450px;
+    margin-bottom: 65px;
+}
+#sec03 img{
+    width: 95px;
+}
+
+
+footer{
+    background-color: #aabaa0;
+    height: 70px;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
