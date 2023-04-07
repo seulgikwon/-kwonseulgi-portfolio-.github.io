@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+    list-style-type: none;
+}
+html{
+    font-size: 16px;
+    color: #515151;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap{
+    width: 100%;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*************header*************/
+header h1{
+    text-align: center;
+    margin: 25px 0 35px 0;
+}
+header nav ul{
+    width: 1050px;
+    margin: 0 auto;
+}
+header nav ul li{
+    width: 150px;
+    text-align: center;
+    float: left;
+    margin-bottom: 30px;
+}
+header h1 a{
+    color: #515151;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'yg-jalnan';
+}
+header ul li a{
+    color: #515151;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+header ul li a:hover{
+    color: #ee7614;
+}
+
+/*************sec01*************/
+#sec01{
+    width: 100%;
+    height: 1080px;
+    background-image: url(../images/visual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    clear: both;
+}
+/*************sec02*************/
+h2{
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+#sec02 h3{
+    float: left;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#sec02 p{
+    float: left;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 35px 20px;
+}
+#left{
+    width: 575px;
+    height: 570px;
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+#left img{
+    width: 100%;
+}
+
+#sec02 a{
+    float: right;
+    color: #6ec8de;
+    margin-top: 55px;
+    margin-right: 15px;
+}
+#right{
+    width: 575px;
+    height: 570px;
+    float: right;
+}
+#right div{
+    height: 25%;
+    border-bottom: 1px solid #ccc;
+}
+
+#right img{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/*************sec03*************/
+#sec03 img{
+    margin-top: 55px;
+}
+
+/*************sec04*************/
+#sec04{
+    height: 700px;
+    border-bottom: 1px solid #ddd;
+}
+#sec04 .inner div{
+    float: left;
+    width: 385px;
+    height: 545px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-bottom: 100px;
+}
+#sec04 img{
+    width: 100%;
+}
+.event{
+    margin-right: 22px;
+}
+#sec04 .inner h4{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 25px;
+    top: 385px;
+}
+#sec04 .inner p{
+    position: absolute;
+    left: 25px;
+    top: 420px;
+}
+#sec04 .inner h5{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+#sec04 .inner a{
+    color: #6ec8de;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+/*************sec04*************/
+#sec05{
+    padding-top: 40px;
+}
+#sec05 #bot01{
+    width: 240px;
+    height: 100px;
+    margin-right: 70px;
+}
+#sec05 #bot01 #number{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#sec05 #bot01 #time{
+    font-size: 0.8rem;
+}
+#sec05 #bot02{
+    width: 470px;
+    height: 100px;
+    margin-right: 50px;
+}
+#sec05 #bot02 p{
+    color: #868686;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+#sec05 #bot03{
+    width: 365px;
+    height: 100px;
+}
+#bot03 img{
+    width: 100%;
+    margin-top: 20px;
+}
+#sec05 .inner div{
+    float: left;
+    margin-bottom: 50px;
+}
+
+/*************footer*************/
+footer{
+    clear: both;
+    padding: 65px 0;
+    background-color: #f1f5f8;
+    border-top: 1px solid #ddd;
+}
+footer ul{
+    width: 600px;
+    margin: 0 auto;
+}
+footer ul li{
+    float: left;
+    margin: 0 15px;
+}
+footer a{
+    font-size: 0.8rem;
+    color: #515151;
+    text-decoration: none;
+    margin-bottom: 35px;
+    display: block;
+}
+footer #footer01{
+    font-weight: bold;
+}
+footer p{
+    clear: both;
+    color: #838383;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+footer p span{
+    color: #d6d6d6;
+}
