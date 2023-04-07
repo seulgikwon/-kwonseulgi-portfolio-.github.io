@@ -45,26 +45,26 @@ p{font-family: 'LINESeedKR-Rg'; font-weight: 400;}
     letter-spacing: -0.05em;
 }
 .menu_wrap p{
-    padding-bottom: 20px;
+    height: 50px;
     opacity: 0.5;
 }
 .menu_wrap p:nth-child(4){
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     opacity: 1;
 }
 .menu_wrap p:nth-child(3):hover{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     opacity: 1;
 }
 .menu_wrap p:nth-child(2):hover{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     opacity: 1;
 }
 .menu_wrap p:nth-child(5):hover{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
     opacity: 1;
 }
@@ -111,7 +111,7 @@ table{
     font-size: 18px;
     margin-bottom: 50px;
 }
-.btn{margin-left: 40px;}
+
 .btn a{
     padding: 15px 40px;
     box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
@@ -148,6 +148,43 @@ table{
     background-size: cover;
     background-position: center center;
 }
+
+#shilla_color div:nth-child(1){
+    width: 23px;
+    height: 23px;
+    background-color: #F1E3C4;
+    border-radius: 20px;
+    display: inline-block;
+}
+#shilla_color div:nth-child(2){
+    width: 23px;
+    height: 23px;
+    background-color: #424D05;
+    border-radius: 20px;
+    display: inline-block;
+}
+#shilla_color div:nth-child(3){
+    width: 23px;
+    height: 23px;
+    background-color: #806F56;
+    border-radius: 20px;
+    display: inline-block;
+}
+#shilla_color div:nth-child(4){
+    width: 23px;
+    height: 23px;
+    background-color: #Fff;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+#shilla_color div:nth-child(5){
+    width: 23px;
+    height: 23px;
+    background-color: #000;
+    border-radius: 20px;
+    display: inline-block;
+}
 /**********************landing************************/
 .landing_mockup{
     width: 100%;
@@ -160,6 +197,42 @@ table{
     background-size: cover;
     background-position: center center;
 }
+#landing_color div:nth-child(1){
+    width: 23px;
+    height: 23px;
+    background-color: #EEA384;
+    border-radius: 20px;
+    display: inline-block;
+}
+#landing_color div:nth-child(2){
+    width: 23px;
+    height: 23px;
+    background-color: #BFD2CC;
+    border-radius: 20px;
+    display: inline-block;
+}
+#landing_color div:nth-child(3){
+    width: 23px;
+    height: 23px;
+    background-color: #FBD51E;
+    border-radius: 20px;
+    display: inline-block;
+}
+#landing_color div:nth-child(4){
+    width: 23px;
+    height: 23px;
+    background-color: #Fff;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+#landing_color div:nth-child(5){
+    width: 23px;
+    height: 23px;
+    background-color: #000;
+    border-radius: 20px;
+    display: inline-block;
+}
 /**********************artemide************************/
 .artemide_mockup{
     width: 100%;
@@ -171,6 +244,50 @@ table{
     background-image: url(../images/artemide.png);
     background-size: cover;
     background-position: center center;
+}
+#artemide_color div:nth-child(1){
+    width: 23px;
+    height: 23px;
+    background-color: #E3251B;
+    border-radius: 20px;
+    display: inline-block;
+}
+#artemide_color div:nth-child(2){
+    width: 23px;
+    height: 23px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: inline-block;
+}
+#artemide_color div:nth-child(3){
+    width: 23px;
+    height: 23px;
+    background-color: #000;
+    border-radius: 20px;
+    display: inline-block;
+}
+#artemide_color div:nth-child(4){
+    width: 23px;
+    height: 23px;
+    background-color: #Fff;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+/**********************clone coding************************/
+.clone .btn{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clone .btn a{
+    display: block;
+    width: 220px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.clone .works_content{
+    padding-top: 450px;
 }
 /**********************branding************************/
 #branding .content{
