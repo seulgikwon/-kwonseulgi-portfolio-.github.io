@@ -367,16 +367,19 @@ table{
     height: 300px;
     margin-right: 70px;
 }
+#poster_wrap div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 #poster_wrap div:nth-child(1){
     background-image: url(../images/poster1.png);
     background-position: center center;
-    cursor: pointer;
 }
 #poster_wrap div:nth-child(2){
     background-image: url(../images/poster2.png);
     margin-right: 0;
     background-position: center center;
-    cursor: pointer;
 }
 .poster_img{
     width: 600px;
@@ -388,17 +391,16 @@ table{
 .poster_img div{
     width: 100%;
     height: 100%;
-    
+    display: none;
 }
+
 .poster_img #poster1{
-    opacity: 0;
     background-image: url(../images/poster1_1.png);
 }
 .poster_img #poster2{
-    margin-left: -600px;
-    opacity: 0;
     background-image: url(../images/poster2_1.png);
 }
+
 .poster .works_content{
     position: relative;
     width: 50%;
@@ -544,9 +546,16 @@ table{
     background-color: rgb(206, 206, 206);
     margin-right: 20px;
     margin-bottom: 20px;
-    cursor: pointer;
 }
-#banner_btn div:hover{
+#banner_btn div a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#banner_btn div a.on{
+    background-color: #727272;
+}
+#banner_btn div a:hover{
     background-color: #66CAAB;
 }
 .banner .mockup{
@@ -572,54 +581,57 @@ table{
     right: 0;
     
 }
+.banner_wrap div{
+    display: none;
+}
 .banner_img #banner1{
     background-image: url(../images/banner1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
 }
 .banner_img #banner2{
     background-image: url(../images/banner2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
 }
 .banner_img #banner3{
     background-image: url(../images/banner3.png);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
 }
 .banner_img #banner4{
     background-image: url(../images/banner4.png);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
 }
 .banner_img #banner5{
     background-image: url(../images/banner5.png);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
     background-size: 90%;
 }
 .banner_img #banner6{
     background-image: url(../images/banner6.png);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
 }
 .banner_img #banner7{
     background-image: url(../images/banner7.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
     background-size: 90%;
 }
 .banner_img #banner8{
     background-image: url(../images/banner8.png);
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0;
+    
     
 }

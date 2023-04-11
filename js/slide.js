@@ -9,96 +9,136 @@ $(document).ready(function(){
         arrows: false,
       });
 
-      $('#poster_btn1').click(function(){
-        $('#poster1').css({
-            opacity:1
+
+      $('.poster').each(function(){
+
+        var anchor = $(this).find('#poster_wrap div a'); //전체에서 a를 찾기
+        var anchor_on = $(this).find('#poster_wrap div a.on'); //찾은 a에서 .on찾기
+        var on_href = anchor_on.attr('href');  //기본으로 .on을 붙여놓은 a의 href 값 찾기
+        var allpanel = $(this).find('.poster_img div'); //전체 panel들 찾기
+
+        //처음 열려있을 .on이 붙은 내용
+
+        anchor.each(function(){  //각각의 a가 개별로 행동하게 할것이다.
+
+            var href = $(this).attr('href');  // 선택한 a에게서 href 값 찾기
+            
+            $(this).click(function(){  //a를 클릭하면
+                allpanel.hide();  //모든 panel을 닫아라
+                anchor.removeClass('on');  //모든 a에게서.on을 빼라 
+                $(this).addClass('on');  // 선택한 a에게 .on을 줘라
+                $(href).show(); //찾은 href 값을 보여줘라
+            });
+
         });
-      });
-      $('#poster_btn2').click(function(){
-        $('#poster2').css({
-            opacity:1
-        });
-      });
+        
 
-      
-
-    //()클릭하면 실행되라. -> ()보여라
-    $('.btn a').click(function () {
-        $('.bg').show();
-    });
-
-    //(닫기) 클릭하면 행동해라 -> ()숨겨라
-    $('.close').click(function () {
-        $('.bg').hide();
-    });
-
+    }); //tab_set 끝
+    //   $('#poster_btn1').click(function(){
+    //     $('#poster1').css({
+    //         opacity:1
+    //     });
+    //   });
+    //   $('#poster_btn2').click(function(){
+    //     $('#poster2').css({
+    //         opacity:1
+    //     });
+    //   });
+     
     //   banner jquery 
 
 
-      $('#banner_btn > div:nth-child(1)').click(function(){
-        $('#banner1').css({
-            opacity:1
+
+    $('.banner').each(function(){
+
+        var anchor = $(this).find('#banner_btn div a'); //전체에서 a를 찾기
+        var anchor_on = $(this).find('#banner_btn div a.on'); //찾은 a에서 .on찾기
+        var on_href = anchor_on.attr('href');  //기본으로 .on을 붙여놓은 a의 href 값 찾기
+        var allpanel = $(this).find('.banner_wrap div'); //전체 panel들 찾기
+
+        //처음 열려있을 .on이 붙은 내용
+
+        anchor.each(function(){  //각각의 a가 개별로 행동하게 할것이다.
+
+            var href = $(this).attr('href');  // 선택한 a에게서 href 값 찾기
+            
+            $(this).click(function(){  //a를 클릭하면
+                allpanel.hide();  //모든 panel을 닫아라
+                anchor.removeClass('on');  //모든 a에게서.on을 빼라 
+                $(this).addClass('on');  // 선택한 a에게 .on을 줘라
+                $(href).show(); //찾은 href 값을 보여줘라
+            });
+
         });
-        $('#banner8').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(2)').click(function(){
-        $('#banner2').css({
-            opacity:1
-        });
-        $('#banner1').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(3)').click(function(){
-        $('#banner3').css({
-            opacity:1
-        });
-        $('#banner2').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(4)').click(function(){
-        $('#banner4').css({
-            opacity:1
-        });
-        $('#banner3').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(5)').click(function(){
-        $('#banner5').css({
-            opacity:1
-        });
-        $('#banner4').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(6)').click(function(){
-        $('#banner6').css({
-            opacity:1
-        });
-        $('#banner5').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(7)').click(function(){
-        $('#banner7').css({
-            opacity:1
-        });
-        $('#banner6').css({
-            opacity:0
-        });
-      });
-      $('#banner_btn > div:nth-child(8)').click(function(){
-        $('#banner8').css({
-            opacity:1
-        });
-        $('#banner7').css({
-            opacity:0
-        });
-      });
+        
+
+    }); //tab_set 끝
+
+
+    //   $('#banner_btn > div:nth-child(1)').click(function(){
+    //     $('#banner1').css({
+    //         opacity:1
+    //     });
+    //     $('#banner8').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(2)').click(function(){
+    //     $('#banner2').css({
+    //         opacity:1
+    //     });
+    //     $('#banner1').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(3)').click(function(){
+    //     $('#banner3').css({
+    //         opacity:1
+    //     });
+    //     $('#banner2').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(4)').click(function(){
+    //     $('#banner4').css({
+    //         opacity:1
+    //     });
+    //     $('#banner3').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(5)').click(function(){
+    //     $('#banner5').css({
+    //         opacity:1
+    //     });
+    //     $('#banner4').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(6)').click(function(){
+    //     $('#banner6').css({
+    //         opacity:1
+    //     });
+    //     $('#banner5').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(7)').click(function(){
+    //     $('#banner7').css({
+    //         opacity:1
+    //     });
+    //     $('#banner6').css({
+    //         opacity:0
+    //     });
+    //   });
+    //   $('#banner_btn > div:nth-child(8)').click(function(){
+    //     $('#banner8').css({
+    //         opacity:1
+    //     });
+    //     $('#banner7').css({
+    //         opacity:0
+    //     });
+    //   });
 
 });
 
