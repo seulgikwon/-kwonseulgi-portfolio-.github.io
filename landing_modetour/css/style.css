@@ -136,7 +136,7 @@ header{
     text-align: center;
     color: #fff;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
  }
  #nav nav ul li a:hover{
    color: #FBD51E;
@@ -278,13 +278,10 @@ header{
    height: 1007px;
    
 }
-#package .inner{
-   position: relative;
-}
 #package > .inner > img{
-   position: absolute;
-   top: 90px;
-   left: 700px;
+   position: relative;
+   top: -100px;
+   left: 220px;
 }
 #package #pk_cont{
    display: flex;
@@ -386,13 +383,10 @@ header{
    background-color: #FFDBCC;
    padding-bottom: 50px;
 }
-#event .inner{
+#event > .inner > img{
    position: relative;
-}
-#event .heart{
-   position: absolute;
-   top: 60px;
-   left: 590px;
+   top: -100px;
+   left: 600px;
 }
 #event li{
    width: 893px;
@@ -599,20 +593,48 @@ header{
 
 
 
-@media (max-width:750px) {
+@media (max-width:700px) {
    .inner{
-      width: 700px;
+      width: 90%;
       margin: 0 auto;
    }
   #main h3{
-   padding-top: 68px;
-   font-size: 4rem;
+   padding-top: 80px;
+   font-size: 3rem;
    }
    #main h3:nth-child(4){
-      padding-top: 77px;
+      padding-top: 188px;
    }
    #main h2{
-      padding-top: 69px;
+      padding-top: 87px;
+      font-size: 2rem;
+   }
+   #main > div{
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background-color: #FF9F78;
+      margin: 0 auto;
+      transform: translateY(50px);
+   }
+   #main h4{
+       color: #fff;
+       font-family: 'TTTtangsbudaejjigaeB';
+       text-align: center;
+       font-size: 2.8rem;
+       padding-top: 100px;
+   }
+   #main h4 span{
+       font-size: 4rem;
+   }
+   #main p{
+       font-family: 'Allura',cursive;
+       color: rgba(255, 255, 255, 0.6);
+       text-align: center;
+       font-size: 7rem;
+       position: relative;
+       top: -40px;
+       transform: rotate(-8deg);
    }
    header{
       height: 765px;
@@ -621,7 +643,7 @@ header{
       width: 100%;
       height: 100px;
       background-color: #FF9F78;
-      margin-top: -16px;
+      margin-top: -29px;
       position: relative;
       z-index: 99;
    }
@@ -636,11 +658,11 @@ header{
    #nav nav ul li a{
       width: 100%;
       display: block;
-      padding: 28px 0;
+      padding: 34px 0;
       text-align: center;
       color: #fff;
       font-weight: bold;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
    }
    #nav nav ul li a:hover{
    color: #FBD51E;
@@ -649,9 +671,13 @@ header{
    /* okinawa */
 
    #okinawa{
-      height: 2450px;
+      height: auto;
       background-size: cover;
       background-position: center -20px;
+      padding-bottom: 100px;
+   }
+   #okinawa h1{
+      padding-top: 110px;
    }
    #okinawa ul{
       display: flex;
@@ -668,10 +694,10 @@ header{
    }
    #okinawa ul li img{
       padding: 15px;
-      width: 325px;
+      width: 100%;
    }
    #okinawa h4{
-      font-size: 1.3rem;
+      font-size: 1.2rem;
    }
    #okinawa h5{
       color: #707070;
@@ -680,7 +706,7 @@ header{
       margin-top: -8px;
    }
    #okinawa p{
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding: 20px 0;
    }
 
@@ -690,6 +716,9 @@ header{
    height: 1150px;
    margin-top: -40px;
 }
+#hotel h1{
+   font-size: 2.4rem;
+}
 #hotel #line{
    top: 335px;
 }
@@ -697,23 +726,22 @@ header{
    position: absolute;
    top: 500px;
    right: 0;
-   width: 500px;
+   width: 100%;
 }
+
 #hotel #hotels{
-   display: block;
+   display: none;
+   
 }
-#hotel #hotels{
-   top: 630px;
-   left:10px;
-}
-#hotel #hotels img{
-   display: block;
-   width: 180px;
+#hotel .heart{
+   top: 60px;
+   left: 380px;
 }
 .more{
    top: 475px;
-   left: 580px;
+   left: 320px;
 }
+
 
 /*package*/
 #package{
@@ -721,79 +749,116 @@ header{
    background-size: cover;
    height: 1900px;
 }
-#package > .inner > img{
-   left: 500px;
-}
 #package #pk_cont{
    display: block;
 }
 #package a{
-   width: 530px;
-   height: 670px;
+   width: 100%;
+   height: 100%;
    border-radius: 40px;
    background-color: #fff;
    margin: 100px 0;
-   margin-left: 85px;
+   margin-left: 0;
+   position: relative;
+   display: block;
+}
+#package h3{
+   font-size: 1.1rem;
+}
+#package .p_img1{
+   background-image: url(../images/package01.png);
+   width: 90%;
+   margin: 0 auto;
+   border-radius: 20px;
+   background-size: cover;
+}
+#package .p_img2{
+   background-image: url(../images/package02.png);
+   width: 90%;
+   margin: 0 auto;
+   border-radius: 20px;
+   background-size: cover;
+}
+
+#package a .more2{
+   display: none;
+}
+/***********hover************/
+
+
+#package a:hover{
+   box-shadow: 5px 10px 15px rgba(0,0,0,0.2);
+   
+}
+#package a:hover h2{
+   color: #2371ca;
+}
+#package a:hover .p_img1{
+   background-size: cover;
+   background-position: center center;
+}
+#package a:hover .p_img2{
+   background-size: cover;
+   background-position: center center;
 }
 
 
 
 /*event*/
 
-#event .heart{
-   left: 410px;
+#event > .inner > img{
+   display: none;
+}
+#event h1{
+   color: #FC6E47;
 }
 #event li{
    width: 100%;
-   height: 200px;
+   height: auto;
    position: relative;
-   padding: 0 15px;
+   padding: 10px 15px 50px 15px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
 }
 #event li img{
-   position: absolute;
-   width: 225px;
-   left:  -14px;
-   top: -5px;
+   display: none;
 }
 #event li h2{
    font-size: 2rem;
    text-align: right;
 }
 #event li h3{
-   font-size: 1.5rem;
-   padding-left: 220px;
+   font-size: 1.2rem;
+   padding-left: 20px;
    padding-top: 15px;
    font-weight: 500;
 }
 #event li p{
-   font-size: 1.2rem;
-   padding-left: 220px;
+   font-size: 1.1rem;
+   padding-left: 20px;
    padding-top: 5px;
    line-height: 1.2;
 }
-#event li:nth-child(2) img{
-   position: absolute;
-   left: 488px;
+#event li:nth-child(2){
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
 }
-#event span{
-   font-weight: bold;
+#event li:nth-child(2) h3{
+   padding-left: 20px;
 }
-#event li:nth-child(3) p{
-   font-size: 1rem;
-}
-#event li:nth-child(3) h3{
-   padding-top: 0;
+#event li:nth-child(2) p{
+   padding-left: 20px;
 }
 /*********mode**********/
 
-
+#mode{
+   height: auto;
+}
 #mode ul{
    margin-top: 50px;
 }
 #mode .heart{
-   position: absolute;
-   top: 75px;
-   left: 80px;
+   display: none;
 }
 #mode ul li{
    width: 100%;
@@ -805,12 +870,13 @@ header{
    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 #mode ul li h3{
-   font-size: 1.5rem;
+   font-size: 1.1rem;
    font-weight: 500;
-   padding: 23px 0 0 180px;
+   padding: 27px 0 0 90px;
 }
 #mode ul li img{
    top: 20px;
+   left: 15px;
 }
 
 
@@ -818,29 +884,38 @@ header{
 
 #banner{
    height: 150px;
+   margin-top: 0;
 }
 
 #banner .inner{
    position: relative;
 }
 #banner .emoji{
-   padding-top: 16px;
+   display: none;
 }
 #banner h3{
-   margin-top: -100px;
+   margin-top: 0;
    text-align: center;
-   font-size: 1.6rem;
+   font-size: 1.4rem;
    font-weight: 500;
+   padding-top: 25px;
 }
 #banner .talk{
-   right: 40px;
+   right: 0px;
+   top: 30px;
+   width: 12%;
 }
 #banner .inner > div{
    position: absolute;
    right: 0;
-   top: 110px;
+   top: 115px;
 }
-
+#banner .inner > div p{
+   font-size: 1rem;
+}
+#banner .inner > div img{
+   margin-top: -2px;
+}
 /*****rcmd**********/
 #rcmd .inner{
    height: 900px;
@@ -859,5 +934,29 @@ header{
 .rcmd_slide div a img{
    width: 220px;
 }
+
+#pop h3{
+   background-color: #FF9F78;
+   width: 380px;
+   height: 130px;
+   border-radius: 150px;
+   color: #fff;
+   font-size: 1.5rem;
+   font-family: 'TTTtangsbudaejjigaeB';
+   text-align: center;
+   padding-top: 28px;
+   line-height: 1.3;
+   position: relative;
+}
+#pop h3 span{
+   font-size: 2.3rem;
+   font-weight: bold;
+}
+#pop img{
+   position: absolute;
+   top: -10px;
+   right: -100px;
+}
+
 
 }
