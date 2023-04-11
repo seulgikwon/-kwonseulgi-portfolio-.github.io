@@ -696,7 +696,7 @@ article:nth-child(2) .ov_con{
 }
 .main_slide .contents{
     position: absolute;
-    top: 650px;
+    top: 550px;
     left: 0;
     padding: 0;
 }
@@ -708,37 +708,37 @@ article:nth-child(2) .ov_con{
 }
 .contents h6{
     font-family: 'Karla', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 .contents h2{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: lighter;
     padding: 10px 0 40px 0;
 }
 .main_img1{
     width: 100%;
-    height: 557px;
+    height: 450px;
     background-image: url(../images/main_slide1.png);
     background-size: cover;
     float: left;
-    margin-top: 50px;
+    margin-top: 0;
 }
 .main_img2{
     width: 100%;
-    height: 557px;
+    height: 450px;
     background-image: url(../images/main_slide2.png);
     background-size: cover;
     float: left;
-    margin-top: 50px;
+    margin-top: 0;
 }
 .main_img3{
     width: 100%;
-    height: 557px;
+    height: 450px;
     background-image: url(../images/main_slide3.png);
     background-size: cover;
     float: left;
-    margin-top: 50px;
+    margin-top: 0;
 }
 /********************Package***********************/
 #package{
@@ -778,12 +778,12 @@ article:nth-child(2) .ov_con{
     text-align: center;
 }
 #package ul li p{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-left: 15px;
     text-align: center;
 }
 #package ul li span{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 15px;
     display: block;
     font-family: 'Karla', sans-serif;
@@ -1140,34 +1140,32 @@ article:nth-child(2) .ov_con{
 #mission>div{
     float: left;
     width: 70%;
-    height: 420px;
+    height: auto;
     border: 1px solid #000;
     margin-top: 60px;
-    background-image: url(../images/sub_bg3.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 90%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    padding: 20px 0;
 }
 #mission>div:nth-child(5){
     margin-right: 0;
 }
 #mission>div h4{
-    padding-left: 70px;
+    padding-left: 50px;
     padding-bottom: 5px;
     font-size: 1.7rem;
-    margin-top: 80px;
+    margin-top: 60px;
     border-bottom: 1px solid #000;
     display: inline-block;
 }
 #mission>div p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: right;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-right: 40px;
     line-height: 1.5;
+    padding-bottom: 20px;
 }
 
 
