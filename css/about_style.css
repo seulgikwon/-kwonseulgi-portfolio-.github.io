@@ -119,12 +119,11 @@ p{font-family: 'LINESeedKR-Rg';}
     position: relative;
 }
 #about_img h1{
-    font-family: 'Hahmlet', serif;
-    font-size: 4.7rem;
+    font-family: 'LINESeedKR-Rg';
+    font-size: 2.5rem;
     position: absolute;
     top: 100px;
     left: 400px;
-    line-height: 1.2;
 }
 #name{
     font-family: 'LINESeedKR-Rg';
